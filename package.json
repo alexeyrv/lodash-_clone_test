@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/lodash": "^4.14.182",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21"
+  }
+}
