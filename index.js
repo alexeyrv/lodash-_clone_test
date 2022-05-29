@@ -14,7 +14,7 @@ let o1 = [
 ];
 
 console.log('here is console');
-console.log('obj1 = ', o1);
+console.log('original = ', o1);
 
 let o2 = _.clone(o1);
 console.log('clone = ', o2);
@@ -22,9 +22,10 @@ console.log('clone = ', o2);
 let do2 = _.cloneDeep(o1);
 console.log('deep = ', do2);
 
-let res = 'Resulted objects are clone() and cloneDeep() to the 1st original ';
-res += JSON.stringify(o1);
-res += JSON.stringify(o2);
-res += JSON.stringify(do2);
+let res1 = 'original = ' + JSON.stringify(o1);
+let res2 = 'clone() = ' + JSON.stringify(o2);
+let res3 = 'cloneDeep() = ' + JSON.stringify(do2);
 
-$('#res').text(res);
+$('#res1').text(res1);
+$('#res2').text(res2);
+$('#res3').text(res3);
